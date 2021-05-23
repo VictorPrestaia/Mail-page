@@ -1,0 +1,46 @@
+
+// colors
+
+%header-text-color {
+    color: rgb(235, 235, 235); 
+}
+
+%btn-color {
+    background-color: rgb(238, 95, 101)
+}
+
+%gray-bg-color {
+    background-color: rgb(243, 246, 255)
+}
+
+// paddings
+
+%header-padding {
+    padding: 10px 20px; 
+}
+
+%user-select-padding {
+    padding: 5px 10px;
+}
+
+//fonts
+
+%main-font-color-size {
+    color: rgb(101, 103, 110);
+    font-size: 16px;
+}
+
+//borders 
+
+%border-top {
+    border-top: 1px solid rgb(219, 219, 219); 
+}
+%border-right {
+    border-right: 1px solid rgb(219, 219, 219); 
+}
+%border-bottom {
+    border-bottom: 1px solid rgb(219, 219, 219); 
+}
+%border-top {
+    border-left: 1px solid rgb(219, 219, 219); 
+}

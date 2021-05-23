@@ -1,0 +1,12 @@
+.wrap {
+    display: flex;
+    @extend%gray-bg-color;
+}
+
+.left-container-wrap {
+    width: 250px;
+}
+
+.right-container-wrap {
+    width: calc(100vw - 250px);
+}

@@ -1,0 +1,75 @@
+.head-bottom-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.new-letter {
+    height: 60px;
+    width: 250px;
+    @extend%header-padding;
+    @extend%border-bottom;
+    @extend%border-right;
+}
+
+.btn-new-letter {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    @extend%btn-color;
+    @extend%header-text-color;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+}
+
+.head-user-select {
+    @extend%header-padding;
+    @extend%border-bottom;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-select-left {
+    display: flex;
+}
+
+.user-select-right {
+    display: flex;
+    align-items: center;
+}
+
+.user-select-items {
+    margin-right: 20px;
+}
+
+.user-select-all {
+    @extend%user-select-padding;
+    @extend%main-font-color-size;
+    height: 34px;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 20px;
+    user-select: none;
+}
+
+.user-select-btn {
+    @include user-select-btn;
+}
+
+.user-select-letter-count {
+    @extend%main-font-color-size;
+    padding: 10px 0;
+    margin-right: 10px
+}
+
+.user-select-btn-lf {
+    @include user-select-lf-btn;
+}
+
+.btn-l {
+    margin-right: 10px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="./scss/modules/index.css">
+
+    <title>Mail</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- Left Container  -->
+        <div class="left-container-wrap">
+            <!--  Header-Top  -->
+            <div class="mail-head-wrap">
+                <div class="user-data">
+                    <a href="./index.html"><img class="user-img" src="./images/user-img.jpg" alt="user"></a>
+                    <div class="user-name-email">
+                        <p class="user-name">Victor Prestaia</p>
+                        <p class="user-email">artlight3d@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <!--  Header-New-Mail  -->
+            <div class="new-letter">
+                <button class="btn btn-new-letter">New</button>
+            </div>
+        </div>
+
+        <!-- Right Container  -->
+        <div class="right-container-wrap">
+            <!-- Inbox-Header + Search  -->
+            <div class="inbox-search">
+                <p class="inbox">Inbox</p>
+                <input class="search-form" type="search" placeholder="Search...">
+            </div>
+            <!--  Inbox-Header-Bottom  -->
+            <div class="head-user-select">
+                <div class="user-select-left">
+                    <div class="user-select-items user-select-all">
+                        <label>
+                            <input type="checkbox">
+                            <span>All</span>
+                        </label>
+                    </div>
+                    <button class="user-select-items user-select-btn">Mark <img class="arrow-img"
+                            src="./images/down-arrow.svg" alt="down-arrow"></button>
+                    <button class="user-select-items user-select-btn">Move <img class="arrow-img"
+                            src="./images/down-arrow.svg" alt="down-arrow"></button>
+                </div>
+                <div class="user-select-right">
+                    <button class="user-select-items user-select-btn">Show <img class="arrow-img"
+                            src="./images/down-arrow.svg" alt="down-arrow"></button>
+                    <div class="user-select-letter-count">
+                        <span>1-50</span>
+                        <span> of </span>
+                        <span>471</span>
+                    </div>
+                    <button class="user-select-btn-lf btn-l"><img class="arrow-img" src="./images/left-arrow.svg"
+                            alt="left-arrow"></button>
+                    <button class="user-select-btn-lf"><img class="arrow-img" src="./images/right-arrow.svg"
+                            alt="right-arrow"></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
