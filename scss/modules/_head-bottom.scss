@@ -6,9 +6,9 @@
 .new-letter {
     height: 60px;
     width: 250px;
-    @extend%header-padding;
-    @extend%border-bottom;
-    @extend%border-right;
+    padding: var(--header-padding);
+    border-bottom: var(--border);
+    border-right: var(--border);
 }
 
 .btn-new-letter {
@@ -17,21 +17,21 @@
     margin: 0 auto;
     width: 200px;
     height: 40px;
+    background-color: var(--red);
+    color: var(--header-text-color);
     font-size: 16px;
-    @extend%btn-color;
-    @extend%header-text-color;
     cursor: pointer;
     border: none;
     border-radius: 20px;
 }
 
 .head-user-select {
-    @extend%header-padding;
-    @extend%border-bottom;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: var(--header-padding);
+    border-bottom: var(--border);
 }
 
 .user-select-left {
@@ -48,9 +48,10 @@
 }
 
 .user-select-all {
-    @extend%user-select-padding;
-    @extend%main-font-color-size;
     height: 34px;
+    color: var(--font-gray);
+    font-size: var(--main-fz);
+    padding: var(--user-select-padding);
     border: 1px solid rgb(223, 223, 223);
     border-radius: 20px;
     user-select: none;
@@ -61,9 +62,10 @@
 }
 
 .user-select-letter-count {
-    @extend%main-font-color-size;
     padding: 10px 0;
-    margin-right: 10px
+    margin-right: 10px;
+    color: var(--font-gray);
+    font-size: var(--main-fz);
 }
 
 .user-select-btn-lf {
@@ -73,4 +75,3 @@
 .btn-l {
     margin-right: 10px;
 }
-

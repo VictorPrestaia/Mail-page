@@ -15,8 +15,8 @@
 
 <body>
     <div class="wrap">
-        <!-- Left Container  -->
-        <div class="left-container-wrap">
+        <!-- Left  -->
+        <div class="nav-sidebar">
             <!--  Header-Top  -->
             <div class="mail-head-wrap">
                 <div class="user-data">
@@ -27,14 +27,51 @@
                     </div>
                 </div>
             </div>
-            <!--  Header-New-Mail  -->
+            <!--  New-Mail  -->
             <div class="new-letter">
                 <button class="btn btn-new-letter">New</button>
             </div>
+            <!--  Main-nav  -->
+            <div class="main-nav-wrap">
+                <div class="nav">
+                    <div class="nav-item nav-item-active">
+                        <a class="nav-link" href="#"><img class="nav-img" src="./images/inbox.svg" alt="inbox">Inbox
+                            <span class="nav-letter-count">1</span> </a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="#"><img class="nav-img" src="./images/sent.svg" alt="sent">Sent Mail
+                            <span class="nav-letter-count">1</span> </a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="#"><img class="nav-img" src="./images/star.svg" alt="star">Important
+                            <span class="nav-letter-count">1</span> </a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="#"><img class="nav-img" src="./images/draft.svg" alt="draft">Drafts
+                            <span class="nav-letter-count">1</span> </a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="#"><img class="nav-img" src="./images/trash.svg" alt="trash">Trash
+                        </a>
+                    </div>
+                </div>
+                <!-- Labels  -->
+                <div class="label-wrap">
+                    <a class="label" href="#">Labels<img class="label-arrow" src="./images/down-arrow.svg"
+                            alt="down-arrow"></a>
+                    <div class="label-content">
+                        <a class="label" href="#"> <img class="label-img" src="./images/circle-blue.svg"
+                                alt="label-img"> Work</a>
+                        <a class="label" href="#"> <img class="label-img" src="./images/circle-green.svg"
+                                alt="label-img"> Family</a>
+                        <a class="label" href="#"> <img class="label-img" src="./images/circle-red.svg" alt="label-img">
+                            Friends</a>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- Right Container  -->
-        <div class="right-container-wrap">
+        <!-- Right -->
+        <div class="mail-section">
             <!-- Inbox-Header + Search  -->
             <div class="inbox-search">
                 <p class="inbox">Inbox</p>
@@ -68,10 +105,165 @@
                             alt="right-arrow"></button>
                 </div>
             </div>
+            <div class="letter-section-wrap">
+                <table class="letter-table">
+                    <tbody>
+                        <tr class="letter-col letter-col-new">
+                            <td class="table-cell">
+                                <label>
+                                    <input type="checkbox">
+                                </label>
+                            </td>
+                            <td class="table-cell">
+                                <input class="checkbox-important" type="checkbox" id="Important-letter" name="letter">
+                                <label class="checkbox-important-label" for="Important-letter">
+                                </label>
+                            </td>
+                            <td class="table-cell sender">
+                                <span>Sender</span>
+                            </td>
+                            <td class="table-cell">
+                                <span>Content of the letter</span>
+                            </td>
+                            <td class="table-cell" style="margin-left: auto;">
+                                <span>Date</span>
+                            </td>
+                        </tr>
+                        <tr class="letter-col">
+                            <td class="table-cell">
+                                <label>
+                                    <input type="checkbox">
+                                </label>
+                            </td>
+                            <td class="table-cell">
+                                <input class="checkbox-important" type="checkbox" id="Important-letter-1" name="letter">
+                                <label class="checkbox-important-label" for="Important-letter-1">
+                                </label>
+                            </td>
+                            <td class="table-cell sender">
+                                <span>Sender</span>
+                            </td>
+                            <td class="table-cell">
+                                <span>Content of the letter</span>
+                            </td>
+                            <td class="table-cell" style="margin-left: auto;">
+                                <span>Date</span>
+                            </td>
+                        </tr>
+                        <tr class="letter-col">
+                            <td class="table-cell">
+                                <label>
+                                    <input type="checkbox">
+                                </label>
+                            </td>
+                            <td class="table-cell">
+                                <input class="checkbox-important" type="checkbox" id="Important-letter-2" name="letter">
+                                <label class="checkbox-important-label" for="Important-letter-2">
+                                </label>
+                            </td>
+                            <td class="table-cell sender">
+                                <span>Sender</span>
+                            </td>
+                            <td class="table-cell">
+                                <span>Content of the letter</span>
+                            </td>
+                            <td class="table-cell" style="margin-left: auto;">
+                                <span>Date</span>
+                            </td>
+                        </tr>
+                        <tr class="letter-col">
+                            <td class="table-cell">
+                                <label>
+                                    <input type="checkbox">
+                                </label>
+                            </td>
+                            <td class="table-cell">
+                                <input class="checkbox-important" type="checkbox" id="Important-letter-3" name="letter">
+                                <label class="checkbox-important-label" for="Important-letter-3">
+                                </label>
+                            </td>
+                            <td class="table-cell sender">
+                                <span>Sender</span>
+                            </td>
+                            <td class="table-cell">
+                                <span>Content of the letter</span>
+                            </td>
+                            <td class="table-cell" style="margin-left: auto;">
+                                <span>Date</span>
+                            </td>
+                        </tr>
+                        <tr class="letter-col">
+                            <td class="table-cell">
+                                <label>
+                                    <input type="checkbox">
+                                </label>
+                            </td>
+                            <td class="table-cell">
+                                <input class="checkbox-important" type="checkbox" id="Important-letter-4" name="letter">
+                                <label class="checkbox-important-label" for="Important-letter-4">
+                                </label>
+                            </td>
+                            <td class="table-cell sender">
+                                <span>Sender</span>
+                            </td>
+                            <td class="table-cell">
+                                <span>Content of the letter</span>
+                            </td>
+                            <td class="table-cell" style="margin-left: auto;">
+                                <span>Date</span>
+                            </td>
+                        </tr>
+                        <tr class="letter-col">
+                            <td class="table-cell">
+                                <label>
+                                    <input type="checkbox">
+                                </label>
+                            </td>
+                            <td class="table-cell">
+                                <input class="checkbox-important" type="checkbox" id="Important-letter-5" name="letter">
+                                <label class="checkbox-important-label" for="Important-letter-5">
+                                </label>
+                            </td>
+                            <td class="table-cell sender">
+                                <span>Sender</span>
+                            </td>
+                            <td class="table-cell">
+                                <span>Content of the letter</span>
+                            </td>
+                            <td class="table-cell" style="margin-left: auto;">
+                                <span>Date</span>
+                            </td>
+                        </tr>
+                        <tr class="letter-col">
+                            <td class="table-cell">
+                                <label>
+                                    <input type="checkbox">
+                                </label>
+                            </td>
+                            <td class="table-cell">
+                                <input class="checkbox-important" type="checkbox" id="Important-letter-6" name="letter">
+                                <label class="checkbox-important-label" for="Important-letter-6">
+                                </label>
+                            </td>
+                            <td class="table-cell sender">
+                                <span>Sender</span>
+                            </td>
+                            <td class="table-cell">
+                                <span>Content of the letter</span>
+                            </td>
+                            <td class="table-cell" style="margin-left: auto;">
+                                <span>Date</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
         </div>
-
     </div>
-
 </body>
 
 </html>

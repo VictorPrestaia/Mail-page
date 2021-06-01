@@ -1,0 +1,6 @@
+.main-nav-wrap {
+    border-right: var(--border);
+    height: calc(100vh - 120px);
+    overflow-y: auto;
+    flex-grow: 1;
+}

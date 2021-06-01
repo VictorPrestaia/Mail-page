@@ -21,49 +21,36 @@ img {
   vertical-align: middle;
 }
 
-.user-name-email .user-name, .user-name-email .user-email, .inbox, .search-form, input::placeholder, .btn-new-letter {
-  color: #ebebeb;
-}
-
-.btn-new-letter {
-  background-color: #ee5f65;
-}
-
-.wrap, .user-select-btn, .user-select-btn-lf {
-  background-color: #f3f6ff;
-}
-
-.user-data, .inbox-search, .new-letter, .head-user-select {
-  padding: 10px 20px;
-}
-
-.user-select-all {
-  padding: 5px 10px;
-}
-
-.user-select-all, .user-select-btn, .user-select-letter-count, .user-select-btn-lf {
-  color: #65676e;
-  font-size: 16px;
-}
-
-.new-letter {
-  border-right: 1px solid #dbdbdb;
-}
-
-.new-letter, .head-user-select {
-  border-bottom: 1px solid #dbdbdb;
+:root {
+  --header-text-color: rgb(235, 235, 235);
+  --font-gray: rgb(101, 103, 110);
+  --red: rgb(238, 95, 101);
+  --bg-color-gray: rgb(243, 246, 255);
+  --active-bg-color-gray: rgb(227, 229, 244);
+  --border: 1px solid rgb(219, 219, 219);
+  --header-padding: 10px 20px;
+  --user-select-padding: 5px 10px;
+  --main-fz: 16px;
 }
 
 .wrap {
   display: flex;
+  height: 100vh;
+  background-color: var(--bg-color-gray);
 }
 
-.left-container-wrap {
+.nav-sidebar {
+  display: flex;
+  flex-direction: column;
   width: 250px;
+  border-right: var(--border);
+  overflow-y: auto;
 }
 
-.right-container-wrap {
-  width: calc(100vw - 250px);
+.mail-section {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .user-data {
@@ -71,6 +58,7 @@ img {
   display: flex;
   align-items: center;
   background-color: #53a6dc;
+  padding: var(--header-padding);
 }
 
 .user-img {
@@ -87,9 +75,11 @@ img {
 .user-name-email .user-name {
   font-size: 18px;
   font-weight: 600;
+  color: var(--header-text-color);
 }
 .user-name-email .user-email {
   font-size: 14px;
+  color: var(--header-text-color);
 }
 
 .inbox-search {
@@ -98,17 +88,21 @@ img {
   justify-content: space-between;
   align-items: center;
   background-color: #56bf56;
+  padding: var(--header-padding);
 }
 
 .inbox {
+  color: var(--header-text-color);
   font-size: 24px;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .search-form {
   height: 35px;
   max-width: 150px;
   min-width: 80px;
+  color: var(--header-text-color);
   background-color: #87d28f;
   background-image: url(../../images/search.svg);
   background-size: 16px;
@@ -120,6 +114,10 @@ img {
   outline: none;
 }
 
+input::placeholder {
+  color: var(--header-text-color);
+}
+
 .head-bottom-wrap {
   display: flex;
   align-items: center;
@@ -128,6 +126,9 @@ img {
 .new-letter {
   height: 60px;
   width: 250px;
+  padding: var(--header-padding);
+  border-bottom: var(--border);
+  border-right: var(--border);
 }
 
 .btn-new-letter {
@@ -136,6 +137,8 @@ img {
   margin: 0 auto;
   width: 200px;
   height: 40px;
+  background-color: var(--red);
+  color: var(--header-text-color);
   font-size: 16px;
   cursor: pointer;
   border: none;
@@ -147,6 +150,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: var(--header-padding);
+  border-bottom: var(--border);
 }
 
 .user-select-left {
@@ -164,6 +169,9 @@ img {
 
 .user-select-all {
   height: 34px;
+  color: var(--font-gray);
+  font-size: var(--main-fz);
+  padding: var(--user-select-padding);
   border: 1px solid #dfdfdf;
   border-radius: 20px;
   user-select: none;
@@ -171,6 +179,9 @@ img {
 
 .user-select-btn {
   height: 34px;
+  color: var(--font-gray);
+  font-size: var(--main-fz);
+  background-color: var(--bg-color-gray);
   padding: 5px 10px 5px 12px;
   border: 1px solid #dfdfdf;
   border-radius: 20px;
@@ -185,10 +196,15 @@ img {
 .user-select-letter-count {
   padding: 10px 0;
   margin-right: 10px;
+  color: var(--font-gray);
+  font-size: var(--main-fz);
 }
 
 .user-select-btn-lf {
   height: 34px;
+  background-color: var(--bg-color-gray);
+  color: var(--font-gray);
+  font-size: var(--main-fz);
   padding: 5px 10px;
   border: 1px solid #dfdfdf;
   border-radius: 20px;
@@ -203,6 +219,133 @@ img {
 
 .btn-l {
   margin-right: 10px;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 20px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  color: var(--maintextcolor);
+  font-size: var(--main-fz);
+  text-decoration: none;
+}
+.label .label-arrow {
+  height: 10px;
+  margin-left: auto;
+}
+
+.label-img {
+  height: 10px;
+  width: 10px;
+  margin-right: 10px;
+}
+
+.nav {
+  border-bottom: var(--border);
+}
+.nav .nav-item {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 15px;
+  cursor: pointer;
+}
+.nav .nav-link {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  text-decoration: none;
+  color: var(--font-gray);
+  font-size: var(--main-fz);
+}
+.nav .nav-img {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+.nav .nav-letter-count {
+  display: inline-block;
+  color: var(--header-text-color);
+  margin-left: auto;
+  line-height: 26px;
+  background-color: var(--colorred);
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  border-radius: 13px;
+}
+.nav .nav-item-active {
+  position: relative;
+  background-color: var(--active-bg-color-gray);
+}
+.nav .nav-item-active:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: var(--red);
+}
+
+.letter-section-wrap {
+  height: calc(100vh - 120px);
+  overflow-y: auto;
+  flex-grow: 1;
+  padding: 0 30px;
+}
+.letter-section-wrap .letter-table {
+  color: var(--font-gray);
+  font-size: var(--main-fz);
+  width: 100%;
+}
+.letter-section-wrap .letter-col {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-bottom: var(--border);
+  cursor: pointer;
+}
+.letter-section-wrap .letter-col:hover {
+  background-color: var(--active-bg-color-gray);
+}
+.letter-section-wrap .letter-col:hover .checkbox-important-label {
+  background-image: url(../../images/star-white.png);
+}
+.letter-section-wrap .letter-col-new {
+  color: #111111;
+  font-weight: 600;
+}
+.letter-section-wrap .table-cell {
+  padding: 8px 0;
+  margin-right: 14px;
+}
+.letter-section-wrap .checkbox-important {
+  display: none;
+}
+.letter-section-wrap .checkbox-important:checked + .checkbox-important-label {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url(../../images/star-red.png);
+  background-size: 100%;
+}
+.letter-section-wrap .checkbox-important-label {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url(../../images/star-gray.png);
+  background-size: 100%;
+}
+.letter-section-wrap .sender {
+  width: 30%;
+  text-align: start;
 }
 
 /*# sourceMappingURL=index.css.map */

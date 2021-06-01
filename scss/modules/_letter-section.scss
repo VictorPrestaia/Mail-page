@@ -1,0 +1,65 @@
+.letter-section-wrap {
+    height: calc(100vh - 120px);
+    overflow-y: auto;
+    flex-grow: 1;
+    padding: 0 30px;
+
+    .letter-table {
+        color: var(--font-gray);
+        font-size: var(--main-fz);
+        width: 100%;
+    }
+
+    .letter-col {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        border-bottom: var(--border);
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--active-bg-color-gray);
+
+            .checkbox-important-label {
+                background-image: url(../../images/star-white.png);
+            }
+        }
+    }
+
+    .letter-col-new {
+        color: rgb(17, 17, 17);
+        font-weight: 600;
+    }
+
+    .table-cell {
+        padding: 8px 0;
+        margin-right: 14px;
+    }
+
+    .checkbox-important {
+        display: none;
+
+        &:checked+.checkbox-important-label {
+            content: '';
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background-image: url(../../images/star-red.png);
+            background-size: 100%;
+        }
+    }
+
+    .checkbox-important-label {
+        content: '';
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-image: url(../../images/star-gray.png);
+        background-size: 100%;
+    }
+
+    .sender {
+        width: 30%;
+        text-align: start;
+    }
+}
